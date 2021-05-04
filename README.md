@@ -34,7 +34,7 @@ git commit --reuse-message=HEAD
 
 ```shell
 # create a repository under your account using the current directory name
-$ git init my-project
+$ git init my-project # Do not make directory with mkdir!
 $ cd my-project
 $ gh repo create
 
