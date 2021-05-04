@@ -53,11 +53,11 @@ $ gh repo create --enable-issues=false --enable-wiki=false
 + 일단 뭔가 파일이 있어야 한다. 
 
 ```shell
-> touch README.md
-> git add . 
-> git commit -m "initial commit"
-> git branch -m master main 
-> git push -u origin main 
+$ touch README.md
+$ git add . 
+$ git commit -m "initial commit"
+$ git branch -m master main 
+$ git push -u origin main 
 ```
 
 
