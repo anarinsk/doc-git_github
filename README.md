@@ -48,5 +48,20 @@ $ gh repo create cli/my-project
 $ gh repo create --enable-issues=false --enable-wiki=false
 ```
 
+### `master`로 생성되는 게 싫다면?
+
++ 일단 뭔가 파일이 있어야 한다. 
+
+```shell
+> touch README.md
+> git add . 
+> git commit -m "initial commit"
+> git branch -m master main 
+> git push -u origin main 
+```
+
+
+
+
 
 
