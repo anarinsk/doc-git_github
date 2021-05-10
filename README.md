@@ -3,6 +3,10 @@ Quick personal guide for git and github
 
 ## Git 
 
+## Ultimate Reference 
+
+https://git-scm.com/book/ko/v2/
+
 ### Frequently but not memorizeable 
 
 + 로컬의 내용 날리기 
