@@ -7,22 +7,20 @@ Quick personal guide for git and github
 
 https://git-scm.com/book/ko/v2/
 
-### Frequently but not memorizeable 
+## Frequently but not memorizeable 
 
 + 로컬의 내용 날리기 
   + 로컬에서 뭔가 작업하던 내용이 있으나 그냥 Github의 내용을 가져오는 게 나을 때 쓰자 
   + 바로 전 커밋으로 돌린다. 
 
 ```shell
-git reest --hard 
+git reset --hard 
 ```
-
-### Reuse previous comment 
++ 이전 코멘트 그대로 재사용 하기 
 
 ```shell
 git commit --reuse-message=HEAD
 ```
-
 
 ## Github 
 
