@@ -13,12 +13,3 @@ Quick personal guide for git and github
 ### Ultimate Reference 
 
 https://git-scm.com/book/ko/v2/
-
-
-$$x = 1$$
-
-
-
-
-
-
