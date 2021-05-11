@@ -4,9 +4,9 @@ Quick personal guide for git and github
 
 ## LINKS
 
-- [quick use]()
-- [github]()
-- [deep git]()
+- [quick use](https://github.com/anarinsk/doc-git_github/blob/main/quick_use.md)
+- [github](https://github.com/anarinsk/doc-git_github/blob/main/github.md)
+- [deep git](https://github.com/anarinsk/doc-git_github/blob/main/deep_git.md)
 
 ## References
 
