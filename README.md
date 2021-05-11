@@ -15,6 +15,8 @@ Quick personal guide for git and github
 https://git-scm.com/book/ko/v2/
 
 
+$$x = 1$$
+
 
 
 
