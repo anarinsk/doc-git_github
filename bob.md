@@ -114,6 +114,23 @@ git의 주기를 대략 파악할 수 있을 것이다.
 commit의 개념은 현재 staging area의 스냅샷을 뜨는 것이다. 이런게 사직이 찍히면 스테이징 영역을 비워진다. 둘 다 공백인 상태, 즉 파일이 처음 생성되고 아무런 작업이 이루어지지 않은 상태는 `??`이 표시된다. 한번이라도 파일을 스테이징 영역에 올려놓지 않으면 해당 파일에 어떤 조작을 하더라도 상태는 계속 `??`에 머물러 있다. 
 
 
-### 
+## Branch 
 
+```shell
+> git add README test.rb LICENSE
+> git commit -m 'The initial commit of my project'
+```
 
+git 디렉토링에 아래와 같이 세 종류의 파일이 생성된다. 
+
+![](https://git-scm.com/book/en/v2/images/commit-and-tree.png)
+
+- 커밋 정보 
+- blob 파일에 관한 정보 
+- blob (실제 파일) 
+
+![](https://git-scm.com/book/en/v2/images/commits-and-parents.png)
+
+커밋은 위의 그림처럼 진행된다. 화살표의 의미를 새기자. 화살표는 조상을 나타낸다. 즉, `HEAD` -> `cd14e`, 라면 이는 HEAD가 이 커밋에 달려 있다는 이야기다. 
+
+Git의 브랜치는 커밋 사이를 가볍게 이동할 수 있는 어떤 포인터 같은 것이다. 
