@@ -121,16 +121,35 @@ commit의 개념은 현재 staging area의 스냅샷을 뜨는 것이다. 이런
 > git commit -m 'The initial commit of my project'
 ```
 
-git 디렉토링에 아래와 같이 세 종류의 파일이 생성된다. 
+하나의 커밋에 대해서 깃 디렉토리에 아래와 같이 세 종류의 파일이 생성된다. 이 셋은 항상 함께 따라 다닌다. 
 
 ![](https://git-scm.com/book/en/v2/images/commit-and-tree.png)
 
-- 커밋 정보 
-- blob 파일에 관한 정보 
-- blob (실제 파일) 
+- 커밋 정보 (커밋 사이즈, 참조 트리, 저자, 페어런트)
+- 트리에 관한 정보 (파일에 관한 정보) 
+- blob (파일의 내용) 
 
 ![](https://git-scm.com/book/en/v2/images/commits-and-parents.png)
 
-커밋은 위의 그림처럼 진행된다. 화살표의 의미를 새기자. 화살표는 조상을 나타낸다. 즉, `HEAD` -> `cd14e`, 라면 이는 HEAD가 이 커밋에 달려 있다는 이야기다. 
+커밋은 위의 그림처럼 진행된다. 화살표의 의미를 새기자. 화살표는 페어런트을 나타낸다. 즉, `HEAD` -> `cd14e`, 라면 이는 HEAD가 `Cd14e` 커밋을 참조한다는 이야기다. 화살표 때문에 조상 후손 관계가 약간 혼동될 수 있지만, `git log`를 자주 보면 그럴 일이 없다. 
 
-Git의 브랜치는 커밋 사이를 가볍게 이동할 수 있는 어떤 포인터 같은 것이다. 
+한마디로! Git의 브랜치는 커밋 사이를 가볍게 이동할 수 있는 어떤 포인터 같은 것이다. 
+
+### Branches in action 
+
+```shell
+git branch testing 
+```
+
+![](https://git-scm.com/book/en/v2/images/two-branches.png)
+
+testing이라는 브랜치를 만들어도 위 그림처럼 master와 함께 따라다닌다. 깃에는 특별한 포인터가 있다. `HEAD`는 현재 내가 있는 위치를 나타낸다. 
+
+![](https://git-scm.com/book/en/v2/images/head-to-master.png)
+
+```shell
+git checkout testing 
+```
+
+![](https://git-scm.com/book/en/v2/images/head-to-testing.png)
+
