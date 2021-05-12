@@ -59,7 +59,7 @@ Github CLI가 설치되어 있다면 깃허브에 리포를 함께 만들 수 �
 
 ![](https://git-scm.com/book/en/v2/images/lifecycle.png)
 
-###  Work Tree and Stage 
+###  Work Tree and Staging Area
 
 `git status`는 working tree와 staging area의 상태를 보여주는 명령어이고, `-s`는 이를 짦게 표현한다. 단축 명령어로는 `gst` 혹은 `gst -s`. `-s` 옵션을 통해 파일 상태를 문자 두개로 짤막하게 보여준다. 첫번째(왼쪽)은 staging area에서의 상태를, 두번째(오른쪽)은 working tree에서의 상태를 나타낸다. Staging 상태는 `A`, `M`, ` `(공백)의 상태, 그리고 working tree의 상태는 `M`, ` `의 두 개의 상태를 지닐 수 있다. 따라서 조합 가능한 상태는 모두 6개가 된다. 
 
@@ -111,8 +111,7 @@ git의 주기를 대략 파악할 수 있을 것이다.
   + `M` 해당 파일이 워킹 트리에서 변경되었다. 
 
 
-commit의 개념은 현재 staging area의 스냅샷을 뜨는 것이다. 이런게 사직이 찍히면 스테이징 영역을 비워진다. 
-
+commit의 개념은 현재 staging area의 스냅샷을 뜨는 것이다. 이런게 사직이 찍히면 스테이징 영역을 비워진다. 둘 다 공백인 상태, 즉 파일이 처음 생성되고 아무런 작업이 이루어지지 않은 상태는 `??`이 표시된다. 한번이라도 파일을 스테이징 영역에 올려놓지 않으면 해당 파일에 어떤 조작을 하더라도 상태는 계속 `??`에 머물러 있다. 
 
 
 ### 
