@@ -61,14 +61,10 @@ Github CLI가 설치되어 있다면 깃허브에 리포를 함께 만들 수 �
 
 ###  Work Tree and Stage 
 
-1. README 파일을 생성한다. 
-2. 파일을 만들었지만 깃에게 추적을 지시하지 않았다. 즉, 스테이지에 올리지 않은 것이다. 스테이지에 올리기 위해서는 `add`룰 사용한다. 
-3. 일단 파일이 스테이지에 올라갔다. 
-4. 파일을 수정한다. 
-5. 다시 스테이징 한다. 
-5. 커밋한다. 
+`git status`는 working tree와 staging area의 상태를 보여주는 명령어이고, `-s`는 이를 짦게 표현한다. 단축 명령어로는 `gst` 혹은 `gst -s`. `-s` 옵션을 통해 파일 상태를 문자 두개로 짤막하게 보여준다. 첫번째(왼쪽)은 staging area에서의 상태를, 두번째(오른쪽)은 working tree에서의 상태를 나타낸다. Staging 상태는 `A`, `M`, ` `(공백)의 상태, 그리고 working tree의 상태는 `M`, ` `의 두 개의 상태를 지닐 수 있다. 따라서 조합 가능한 상태는 모두 6개가 된다. 
 
-각각에 대해서 `git status -s`로 상태를 살펴보자. `git status`는 working tree와 staging area의 상태를 보여주는 명령어이고, `-s`는 이를 짦게 표현한다. 단축 명령어로는 `gst -s`
+
+
 
 ```shell
 (README 파일 생성)
@@ -83,7 +79,6 @@ AM README
 A  README
 ```
 
-위에서 `-s`로 표현되는 내용을 파일 상태를 문자 두개로 짤막하게 보여준다. 첫번째(왼쪽)은 staging area에서의 상태를, 두번째(오른쪽)은 working tree에서의 상태를 나타낸다. 
 
 
 
